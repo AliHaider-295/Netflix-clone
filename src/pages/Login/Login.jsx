@@ -22,11 +22,11 @@ const Login = () => {
     setLoading(false);
   };
 
-  return (
-
-    loading?<div className="login-spinner">
-    <img src={netflix_spinner} alt="" />
-    </div>:
+  return loading ? (
+    <div className="login-spinner">
+      <img src={netflix_spinner} alt="" />
+    </div>
+  ) : (
     <div className="login">
       <img src={logo} className="login-logo" alt="Logo" />
       <div className="login-form">
